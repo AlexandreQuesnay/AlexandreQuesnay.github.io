@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html , body{
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    height: 100vh;
+    animation: fadein 2s; 
+    overflow: hidden;
+}
+@keyframes fadein {
+ 0% {
+ opacity:0;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+
+/*----------------gauche-------------*/
+section .left{
+    width: 35%;
+    float: left;
+    color: black ;
+}
+
+
+h1{
+    color: #5B808A;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    
+}
+
+ h2{
+    color: #5B808A;
+    font-size: 200%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+
+
+/*----------------Nav-------------*/
+section .left nav {
+    margin-top: 5% ;
+    margin-left: 14%;   
+}
+
+
+section .left nav img{
+    margin-left: 10px;
+    width: 11.7%;
+    transition: .4s;
+}
+section .left nav img:hover{
+    opacity: 0.6;
+}
+
+
+/*-----------------Aside-------------*/
+section .left aside{
+    width: 75%;
+    margin: 5% 0% 0% 16%;
+    font-size: 100%;
+}
+
+section .left aside p{
+    width: 90%;
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-top: 20%;
+}
+
+/*----------------Nav projet-------------*/
+section .left .autre{
+    width: 75%;
+    margin: 5% 0% 0% 16%;
+}
+
+section .left .autre2{
+   display: none;
+}
+
+
+section .left .autre h3{
+    color: #4A3933;
+    font-size: 120%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    width: 100%;
+    margin-left: 5%;
+   
+}
+
+
+section .left .autre .vide{
+    width: 100px;
+    height: 2px;
+    padding-right: 40%;
+    background-color: #405B5D;
+    margin: 40% 0% 1% 0%;
+}
+
+@media screen and (max-width : 1700px){
+
+    section .left .autre .vide{
+        margin: 20% 0% 1% 0%;
+    }
+    
+}
+
+
+section .left .autre img:hover{
+    opacity: 0.6;
+}
+section .left .autre .lien{
+    margin-top: 5%;
+    display: flex;
+   
+  
+}
+section .left .autre .vide{
+    width: 50%;
+}
+
+
+
+section .left .autre .button{
+    width: 65%;
+    outline: none;
+    text-decoration: none;
+    float: right;
+    font-size: 95%;
+    cursor: pointer;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    color: #4A3933;
+    transition: .4s linear;
+    text-align: left;
+    margin-bottom: 3%;
+    z-index: 1000;
+}
+
+section .left .autre a {
+   width: 7%;
+}
+
+
+
+
+
+/*----------------Droite-------------*/
+section .right{
+    position: relative;  
+    width: 65%;
+    height: 100vh;
+    float: right;
+    overflow-y: scroll;
+
+}
+
+section .right p{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+section .right .imag{
+    margin-top: 0.5%;
+    width: 100%;
+    margin-bottom: 10%;
+    transition: .6s;
+    overflow: hidden;
+
+}
+section .right .imag:first-child img{
+    width: 100%;
+    transition: .6s;
+    margin-top: -10%;
+
+}
+
+section .right .imag img{
+    width: 100%;
+    transition: .6s;
+}
+
+section .right .aff{
+    display: flex;
+    width: 100%;
+
+}
+section .right .aff .imag{
+    margin-top: 0.5%;
+    margin-bottom: 10%;
+    transition: .6s;
+    overflow: hidden;
+
+}
+section .right .aff .imag img{
+    width: 100%;
+    transition: .6s;
+}
+section .right .aff .imag img:first-child{
+    width: 100%;
+    transform: scale(1.13);
+    transition: .6s;
+}
+section .right .aff .imag:hover img:first-child{
+    transform: scale(1.2);
+
+}
+
+section .right .imag:hover img{
+    transform: scale(1.1);
+
+}
+@media screen and (max-width : 1700px) {
+
+
+    section .left .autre .vide{
+        margin-top: 3%;
+
+    }
+}
+
+
+@media screen and (max-width : 1350px) {
+    section .left aside p{
+        font-size: 13px;
+    }
+
+    h1{
+        font-size:280% ;
+    }
+    
+    section .right p{
+        font-size: 13px;
+
+    }
+      
+    
+    
+}
+
+@media screen and (max-width : 1200px) {
+    section .left aside p{
+        font-size: 13px;
+    }
+
+    section .left aside h1{
+        font-size:280% ;
+    }
+
+
+    
+}
+
+@media screen and (max-width : 990px) {
+    section .left aside p{
+        font-size: 11px;
+    }
+    section .left .autre .button{
+
+        font-size: 75%;
+    }
+
+    h1{
+        font-size:220% ;
+    }
+    
+
+    
+    
+}
+
+@media screen and (max-width : 720px ) {
+    html , body{
+        overflow: visible;
+    }
+
+    section .left{
+        margin-top: 15%;
+        clear: both;
+        width: 100%;
+        justify-content: center;
+    }
+    section .left aside{
+        margin: 1%;
+    }
+    
+    section .right{
+        clear: both;
+        width: 100%;
+        height: 100%;
+    }   
+    
+    section .left .autre{
+        display: none;
+    }
+    
+    section .left .autre2{
+        display: block;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    
+    section .left .autre2 h3{
+        color: #4A3933;
+        font-size: 120%;
+        font-family: 'Big Shoulders Text', sans-serif;
+        font-style: normal;
+        font-weight: 550;
+        width: 90%;
+        margin-left: 3%;
+       
+    }
+    
+    
+    section .left .autre2 .vide{
+        width: 100%;
+        height: 2px;
+        padding-right: 40%;
+        background-color: #405B5D;
+        margin: 5% 0% 1% 0%;
+    }
+    
+    
+    section .left .autre2 img:hover{
+        opacity: 0.6;
+    }
+    section .left .autre2 .lien{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    section .left .autre2 .vide{
+        width: 60%;
+    }
+    
+    section .left .autre2 .g{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section .left .autre2 .d{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    section .left .autre2 .button{
+        width: 70%;
+        outline: none;
+        text-decoration: none;
+        float: right;
+        font-size: 95%;
+        cursor: pointer;
+        font-family: 'Oswald';
+        font-style: normal;
+        color: #4A3933;
+        transition: .4s linear;
+        text-align: left;
+        margin-bottom: 3%;
+        z-index: 1000;
+        text-align: center;
+    }
+    
+    section .left .autre2 a {
+       width: 7%;
+    }
+    
+    
+
+   
+    section .left nav{
+        margin-left: 5%;
+    }
+    section .left nav ul{
+    display: none;
+    }
+    section .left nav img{
+        margin-left: 0px;
+
+    }
+
+
+    section .left .contents{
+        width: 80%;
+      
+    }
+      
+
+    section .left .anima .band{
+        display: none;
+    }
+    section .left  .anima .band2{
+        display: none;
+    }
+    section .left .anima .band3{
+        display: none;
+    }
+    section .left .anima .band4{
+        display: none;
+    }
+
+  
+
+
+}
+
+
+
+

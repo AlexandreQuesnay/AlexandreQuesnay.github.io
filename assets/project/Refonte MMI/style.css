@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html , body{
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    height: 100vh;
+    animation: fadein 2s; 
+    overflow: hidden;
+}
+@keyframes fadein {
+ 0% {
+ opacity:0;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+
+/*----------------gauche-------------*/
+section .left{
+    width: 35%;
+    float: left;
+    color: black;
+}
+
+
+section .left aside #siteMmi {
+    color: #2f169f;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+}
+
+section .left aside #werlton {
+    color: #000;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    
+}
+section .left aside #headbosst {
+    color: #331b46;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    
+}
+
+
+ h2{
+    color: #1F2027;
+    font-size: 200%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+/*PICTOGRAMME*/
+section .left aside #picto {
+    color: #542E9A;
+}
+
+section .right .picto {
+    color: #542E9A;
+}
+
+
+/*MMIFOUNDRY*/
+section .left aside #mmi {
+    color: #333333;
+}
+
+section .right .mmi {
+    color: #333333;
+}
+
+
+/*----------------Nav-------------*/
+section .left nav {
+    margin-top: 5% ;
+    margin-left: 14%;   
+}
+
+
+section .left nav img{
+    margin-left: 10px;
+    width: 11.7%;
+    transition: .4s;
+}
+section .left nav img:hover{
+    opacity: 0.6;
+}
+
+
+/*-----------------Aside-------------*/
+section .left aside{
+    width: 75%;
+    margin: 5% 0% 0% 16%;
+    font-size: 100%;
+}
+
+section .left aside p{
+    width: 90%;
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-left: 5%;
+}
+
+
+
+/*-----------------Bande a gauche-------------*/
+
+section .left .anima .band1{
+    position: absolute;
+    background-color: #2f169f
+    ;
+    width: 16px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    animation: band 15s 10s  reverse infinite;
+    z-index:54 ;
+}
+section .left  .anima .band2{
+    position: absolute;
+    background-color: #4611d0;
+    width: 26px;
+    height: 100%;
+    top: 0px;
+    left: 10px;
+    z-index:53 ;
+    animation: band 15s 10.2s  reverse infinite ;
+}
+section .left .anima .band3{
+    position: absolute;
+    background-color: #5359ea;
+    width: 28px;
+    height: 100%;
+    top: 0px;
+    left: 24px;
+    z-index: 52;
+    animation: band 15s 10.4s  reverse  infinite;
+}
+section .left .anima .band4{
+    position: absolute;
+    background-color: #6166ca;
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    left: 39px;
+    z-index: 51;
+    animation: band 15s  10.6S  reverse infinite ;
+}
+
+@keyframes band{
+    0%{transform: scaleX(1);}
+    6%{transform: scaleX(2.5);}
+    12%{transform: scaleX(1);}
+    100%{transform: scaleX(1);}
+    
+}
+
+
+
+/* bande*/
+
+section .left .anima .band11{
+    position: absolute;
+    background-color: #000;
+    width: 19px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    animation: band 15s 10s  reverse infinite;
+    z-index:54 ;
+}
+section .left  .anima .band22{
+    position: absolute;
+    background-color: #404040;
+    width: 26px;
+    height: 100%;
+    top: 0px;
+    left: 10px;
+    z-index:53 ;
+    animation: band 15s 10.2s  reverse infinite ;
+}
+section .left .anima .band33{
+    position: absolute;
+    background-color: #808080;
+    width: 28px;
+    height: 100%;
+    top: 0px;
+    left: 24px;
+    z-index: 52;
+    animation: band 15s 10.4s  reverse  infinite;
+}
+section .left .anima .band44{
+    position: absolute;
+    background-color: #BFBFBF;
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    left: 39px;
+    z-index: 51;
+    animation: band 15s  10.6S  reverse infinite ;
+}
+
+
+/* bande*/
+
+section .left .anima .band111{
+    position: absolute;
+    background-color: #331b46;
+    width: 19px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    animation: band 15s 10s  reverse infinite;
+    z-index:54 ;
+}
+section .left  .anima .band222{
+    position: absolute;
+    background-color: #4d2669;
+    width: 26px;
+    height: 100%;
+    top: 0px;
+    left: 10px;
+    z-index:53 ;
+    animation: band 15s 10.2s  reverse infinite ;
+}
+section .left .anima .band333{
+    position: absolute;
+    background-color: #803dae;
+    width: 28px;
+    height: 100%;
+    top: 0px;
+    left: 24px;
+    z-index: 52;
+    animation: band 15s 10.4s  reverse  infinite;
+}
+section .left .anima .band444{
+    position: absolute;
+    background-color: #9a48d1;
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    left: 39px;
+    z-index: 51;
+    animation: band 15s  10.6S  reverse infinite ;
+}
+
+
+
+
+
+/*----------------Nav projet-------------*/
+section .left .autre{
+    width: 75%;
+    margin: 0% 0% 0% 16%;
+}
+
+section .left .autre2{
+   display: none;
+}
+
+section .left .autre h3{
+    color: #4A3933;
+    font-size: 120%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    width: 100%;
+    margin-left: 5%;
+   
+}
+
+
+section .left .autre .vide{
+    width: 100px;
+    height: 2px;
+    padding-right: 40%;
+    background-color: #405B5D;
+    margin: 30% 0% 0% 0%;
+}
+
+
+section .left .autre img:hover{
+    opacity: 0.6;
+}
+section .left .autre .lien{
+    margin-top: 5%;
+    display: flex;
+   
+  
+}
+section .left .autre .vide{
+    width: 50%;
+}
+
+
+
+section .left .autre .button{
+    width: 65%;
+    outline: none;
+    text-decoration: none;
+    float: right;
+    font-size: 95%;
+    cursor: pointer;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    color: #4A3933;
+    transition: .4s linear;
+    text-align: left;
+    margin-bottom: 3%;
+    z-index: 1000;
+}
+
+section .left .autre a {
+   width: 7%;
+}
+
+
+
+/*----------------Droite-------------*/
+section .right{
+    position: relative;  
+    width: 65%;
+    height: 100vh;
+    float: right;
+    overflow-y: scroll;
+
+}
+
+section .right p{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+section .right .charte{
+    width: 100%;
+    height: 70%;
+}
+
+/*////////Site MMI////////*/
+section .right .img1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+section .right .img1 img{
+    width: 100%;
+
+}
+section .right .maquette h3{
+    color: #1F2027;
+    font-size: 150%;
+    margin-bottom: 1%;
+    font-family: 'Big Shoulders Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+section .right .userWay img{
+    width: 100%;
+
+}
+section .right .maquette img{
+    width: 100%;
+
+}
+
+
+/*//////FIN Site MMI////*/
+
+
+/*//////Werlton Travel////*/
+section .right .Ui img{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*//////FIN Werlton Travel////*/
+
+
+
+/*-----------------Slider-------------*/
+
+
+.container {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	margin: auto;
+}
+
+.slider {
+	display: flex;
+	width: calc(100% * var(--index));
+	transition: transform 0.4s ease-in;
+	transform: translateX(0);
+}
+
+.slider__slide {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.slider__slide::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.slider__slide__image {
+	width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+	
+}
+
+.prev,
+.next,
+.indicators {
+	z-index: 10000;
+	position: absolute;
+}
+
+.prev,
+.next {
+	width: 4rem;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+	text-align: center;
+	font-size: 2rem;
+    color: #fff;
+}
+
+.prev:hover,
+.next:hover {
+	opacity: 1;
+}
+
+.prev {
+	top: 50%;
+	left: 2%;
+	transform: translateY(-50%);
+}
+
+.next {
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+}
+
+.indicators {
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: grid;
+	grid-template-columns: repeat(var(--index), 1fr);
+	gap: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+	justify-items: center;
+}
+
+.indicators div {
+	background-color: #fff;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: all 0.3s ease;
+	width: 15px;
+	aspect-ratio: 1;
+}
+
+.indicators div:hover {
+	opacity: 0.6;
+}
+
+.active {
+	opacity: 1 !important;
+}
+
+.slider__slide__details {
+	padding: 5rem;
+	padding-left: 10rem;
+	z-index: 100;
+	grid-column: 1 / span 1;
+	grid-row: 1/-1;
+	position: absolute;
+}
+/*----------------- Fin Slider-------------*/
+
+
+
+
+
+@media screen and (max-width : 1700px) {
+
+    
+    section .left .autre .vide{
+        margin: 20% 0% 1% 0%;
+    }
+
+
+
+        section .left .autre .vide{
+            margin-top: 3%;
+    
+        }
+
+    
+
+
+
+    /*bande animÃ©*/
+    section .left .anima .band1{
+        width: 12px;
+        height: 100%;
+    }
+    section .left  .anima .band2{
+        width: 16px;
+        height: 100%;
+    
+    }
+    section .left .anima .band3{
+        width: 17px;
+        height: 100%;
+    }
+    section .left .anima .band4{
+        width: 18px;
+        height: 100%;
+    }
+        
+    /* PICTOGRAMME bande*/
+    section .left .anima .band11{
+        width: 12px;
+        height: 100%;
+    }
+    section .left  .anima .band22{
+        width: 16px;
+        height: 100%;
+    
+    }
+    section .left .anima .band33{
+        width: 17px;
+        height: 100%;
+    }
+    section .left .anima .band44{
+        width: 18px;
+        height: 100%;
+    }
+    
+    /* MMIFOUNDRY bande*/
+    section .left .anima .band111{
+        width: 12px;
+        height: 100%;
+    }
+    section .left  .anima .band222{
+        width: 16px;
+        height: 100%;
+    
+    }
+    section .left .anima .band333{
+        width: 17px;
+        height: 100%;
+    }
+    section .left .anima .band444{
+        width: 18px;
+        height: 100%;
+    }
+    section .left .autre .vide{
+        margin-top: 3%;
+
+    }
+    
+}
+
+
+
+@media screen and (max-width : 1350px) {
+    section .left aside p{
+        font-size: 13px;
+    }
+
+    h1{
+        font-size:280% ;
+    }
+    
+    section .right p{
+        font-size: 13px;
+
+    }
+      
+    /*bande animÃ©*/
+    section .left .anima .band1{
+        width: 9px;
+    }
+    section .left  .anima .band2{
+        left: 8px;
+        width: 11px;
+    }
+    section .left .anima .band3{
+        left: 17px;
+        width: 12px;
+    }
+    section .left .anima .band4{
+        left: 29px;
+        width: 12px;
+    }
+
+     /*bande animÃ©*/
+     section .left .anima .band11{
+        width: 9px;
+    }
+    section .left  .anima .band22{
+        left: 8px;
+        width: 11px;
+    }
+    section .left .anima .band33{
+        left: 17px;
+        width: 12px;
+    }
+    section .left .anima .band44{
+        left: 29px;
+        width: 12px;
+    }
+
+     /*bande animÃ©*/
+     section .left .anima .band111{
+        width: 9px;
+    }
+    section .left  .anima .band222{
+        left: 8px;
+        width: 11px;
+    }
+    section .left .anima .band333{
+        left: 17px;
+        width: 12px;
+    }
+    section .left .anima .band444{
+        left: 29px;
+        width: 12px;
+    }
+    section .left aside p{
+        font-size: 13px;
+    }
+    section .left .autre .vide{
+        margin-top: 2%;
+
+    }
+    
+}
+
+@media screen and (max-width : 1050px) {
+
+
+}
+
+@media screen and (max-width : 990px) {
+    section .left aside p{
+        font-size: 11px;
+    }
+    section .left .autre .button{
+
+        font-size: 75%;
+   
+    }
+
+    section .right .img1  img{
+      margin-top: 0;
+    }
+
+    h1{
+        font-size:220% ;
+    }
+    
+    section .right p{
+        font-size: 11px;
+    }
+    /*bande animÃ©*/
+    section .left .anima .band1{
+        width: 7px;
+    }
+    section .left  .anima .band2{
+        left: 7px;
+        width: 9px;
+    }
+    section .left .anima .band3{
+        left: 15px;
+        width: 10px;
+    }
+    section .left .anima .band4{
+        left: 25px;
+        width: 10px;
+    }
+    
+     /*bande animÃ©*/
+     section .left .anima .band11{
+        width: 7px;
+    }
+    section .left  .anima .band22{
+        left: 7px;
+        width: 9px;
+    }
+    section .left .anima .band33{
+        left: 15px;
+        width: 10px;
+    }
+    section .left .anima .band44{
+        left: 25px;
+        width: 10px;
+    }
+
+     /*bande animÃ©*/
+     section .left .anima .band111{
+        width: 7px;
+    }
+    section .left  .anima .band222{
+        left: 7px;
+        width: 9px;
+    }
+    section .left .anima .band333{
+        left: 15px;
+        width: 10px;
+    }
+    section .left .anima .band444{
+        left: 25px;
+        width: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width : 720px ) {
+    html , body{
+        overflow: visible;
+    }
+    section .right .print .aff #aff{
+        width: 100%;
+    
+    }
+
+    section .left{
+        margin-top: 5%;
+        clear: both;
+        width: 100%;
+        justify-content: center;
+    }
+    section .left aside{
+        margin: 1%;
+    }
+    
+    section .right{
+        clear: both;
+        width: 100%;
+        height: 100%;
+    }   
+    
+    section .left .autre{
+        display: none;
+    }
+    
+    section .left .autre2{
+        display: block;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    
+    section .left .autre2 h3{
+        color: #4A3933;
+        font-size: 120%;
+        font-family: 'Big Shoulders Text', sans-serif;
+        font-style: normal;
+        font-weight: 550;
+        width: 90%;
+        margin-left: 3%;
+       
+    }
+    
+    
+    section .left .autre2 .vide{
+        width: 100%;
+        height: 2px;
+        padding-right: 40%;
+        background-color: #405B5D;
+        margin: 5% 0% 1% 0%;
+    }
+    
+    
+    section .left .autre2 img:hover{
+        opacity: 0.6;
+    }
+    section .left .autre2 .lien{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    section .left .autre2 .vide{
+        width: 60%;
+    }
+    
+    section .left .autre2 .g{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section .left .autre2 .d{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    section .left .autre2 .button{
+        width: 70%;
+        outline: none;
+        text-decoration: none;
+        float: right;
+        font-size: 95%;
+        cursor: pointer;
+        font-family: 'Oswald';
+        font-style: normal;
+        color: #4A3933;
+        transition: .4s linear;
+        text-align: left;
+        margin-bottom: 3%;
+        z-index: 1000;
+        text-align: center;
+    }
+    
+    section .left .autre2 a {
+       width: 7%;
+    }
+    
+    
+    section .left nav{
+        margin-left: 5%;
+    }
+    section .left nav ul{
+    display: none;
+    }
+    section .left nav img{
+        margin-left: 0px;
+
+    }
+
+    section .left .contents{
+        width: 80%;
+      
+    }
+
+    section .left .anima .band1{
+        display: none;
+    }
+    section .left  .anima .band2{
+        display: none;
+    }
+    section .left .anima .band3{
+        display: none;
+    }
+    section .left .anima .band4{
+        display: none;
+    }
+
+    section .left .anima .band11{
+        display: none;
+    }
+    section .left  .anima .band22{
+        display: none;
+    }
+    section .left .anima .band33{
+        display: none;
+    }
+    section .left .anima .band44{
+        display: none;
+    }
+
+    section .left .anima .band111{
+        display: none;
+    }
+    section .left  .anima .band222{
+        display: none;
+    }
+    section .left .anima .band333{
+        display: none;
+    }
+    section .left .anima .band444{
+        display: none;
+    }
+
+    section .right .charte{
+        width: 100%;
+        height: 20%;
+        margin-top: 10%;
+
+    }
+
+}
+
+section .right .logo .imga{
+    margin-top: 5%;
+    /*width: 50%;*/
+    width: 100%;
+    /*height: 40%;*/
+    padding-bottom: 5%;
+    /*position: absolute;
+      z-index: 200;*/
+
+}
+section .right .logo img{
+    /*position: relative;*/
+    width: 80%;
+    margin: 5% 0% 0% 12%;
+    z-index:201;
+
+}

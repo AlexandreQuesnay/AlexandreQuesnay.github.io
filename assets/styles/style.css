@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Serif+Pro&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*::selection {
+  background: #f8fdff;
+  color: #d5000f;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Source Serif Pro', serif;
+  background: #f8fdff;
+  color: #d5000f;
+  transition: 0.7s ease-in-out;
+}
+.wrapper {
+  perspective: 900px;
+}
+.appear {
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.appear.is-inview {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: none;
+}
+h2 {
+  font-size: calc(3rem + 5vw);
+  text-align: center;
+  color: #d5000f;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
+.cv h3 {
+  font-size: calc(3rem);
+  text-align: center;
+  color: #d5000f;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
+.title {
+  font-size: calc(1.5rem + 5vw);
+  letter-spacing: 0;
+}
+span {
+  display: inline-block;
+}
+a,
+a:visited {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #d5000f;
+  transition: 0.1s linear;
+  font-size: calc(0.8rem + 0.8vw);
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #d5000f;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  transform-origin: left;
+}
+.cv::after {
+  background: none;
+}
+
+.contact-link::after {
+  background: none;
+}
+
+a:hover {
+  transform: scale(1.04);
+  color: #030000;
+}
+a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.img {
+  height: 395px;
+  width: 100vw;
+  max-width: 395px;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  transition: 1.6s;
+}
+.img:hover {
+  filter: grayscale(10%);
+}
+.line {
+  height: 2px;
+  width: 70%;
+  margin: 0 auto;
+  background: #d5000f;
+  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+  transition-delay: 0.45s;
+  opacity: 0;
+  transform: scaleX(0);
+}
+.line-wrapper.is-inview .line {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Paramètres par ordre d'apparition */
+header {
+  height: 100vh;
+  position: relative;
+  margin: 2vw 2vw 0;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#h1-wrapper {
+  transition-delay: 0.3s;
+}
+h1 {
+  font-size: calc(2rem + 8vw);
+  margin-top: 70px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: #d5000f;
+}
+header h2 {
+  font-size: calc(1rem + 6.5vw);
+  margin: 18px 0;
+  text-align: left;
+}
+#h2-1 {
+  transition-delay: 0.9s;
+}
+#h2-2 {
+  transition-delay: 1.2s;
+}
+.scroll-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3.5vw;
+  color: #d5000f;
+  font-size: calc(0.8rem + 0.5vw);
+}
+.about {
+  margin: 400px 0 250px;
+}
+.img1 {
+  background: url(../img/IMG_0387.jpg) top/cover;/*ajouter img moi*/
+}
+.h2-wrapper {
+  mix-blend-mode: exclusion;
+  margin: -220px 0 200px;
+}
+.about p {
+  width: 70%;
+  min-width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: calc(7px + 4.5vw);
+  font-size: calc(1rem + 1vw);
+  letter-spacing: 1px;
+}
+
+.cv:hover{
+  opacity: 50%;
+}
+
+.skills {
+  margin: 200px 0 250px;
+}
+.skills h2 {
+  margin-bottom: 150px;
+}
+.skills .wrapper {
+  margin: 30px 0;
+}
+.skills .appear {
+  text-align: center;
+  transition-delay: 0.6s;
+}
+.skills p {
+  font-size: calc(1rem + 6vw);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 4px;
+  color: #d5000f;
+  display: inline-block;
+  padding: 0 12px 12px;
+}
+.portfolio {
+  margin: 200px 0;
+}
+
+footer {
+  margin: 150px 0 120px;
+}
+footer p {
+  font-size: calc(1rem + 2vw);
+  margin: 25px 0;
+  text-align: center;
+}
+#l2 {
+  transition-delay: 1.2s;
+}
+#l3 {
+  transition-delay: 1.6s;
+}
+footer a {
+  font-family: 'Oswald', sans-serif;
+  color: #d5000f;
+  font-size: calc(1rem + 2vw);
+}
+
+
+/*//////////Section////////*/
+
+
+section .proj h2{
+  position: relative;
+  font-size: 400%;
+  padding: 4% 0;
+  font-weight: 500;
+  width: 100%;
+  text-align: center; 
+  color: #d5000f;
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(#d5000f,#d5000f); 
+}
+
+
+
+section .content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+section .content .cadre{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content .cadre img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content .cadre a {
+  width: 100%;
+  height: 100%;
+}
+section .content .cadre  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity:0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content .cadre  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content .cadre  .overlay .over{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+section .content .cadre  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color: #f8fdff;
+  border-radius: 50px ;
+}
+section .content .cadre:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+section .content .cadre2{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content .cadre2 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content .cadre2 a {
+  width: 100%;
+  height: 100%;
+}
+section .content .cadre2  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content .cadre2  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content .cadre2  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content .cadre2  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color: #f8fdff;
+  border-radius: 50px ;
+}
+section .content .cadre2:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre2:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+section .content .cadre3{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content .cadre3 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content .cadre3 a {
+  width: 100%;
+  height: 100%;
+}
+section .content .cadre3  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content .cadre3  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content .cadre3  .overlay .over{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content .cadre3  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  margin: 1%;
+  background-color: #f8fdff;
+  border-radius: 50px ;
+}
+section .content .cadre3:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre3:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+section .content2{
+  width: 100%;
+  display: flex;
+  background: linear-gradient(#f8fdff,#f8fdff); 
+}
+section .content2 .cadre4{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content2 .cadre4 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content2 .cadre4 a {
+  width: 100%;
+  height: 100%;
+}
+section .content2 .cadre4  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content2 .cadre4  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content2 .cadre4  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+section .content2 .cadre4  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  margin-left: 2%;
+  background-color: #f8fdff;
+  border-radius: 50px ;
+}
+section .content2 .cadre4:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre4:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+section .content2 .cadre5{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content2 .cadre5 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content2 .cadre5 a {
+  width: 100%;
+  height: 100%;
+}
+section .content2 .cadre5  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content2 .cadre5  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content2 .cadre5  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content2 .cadre5  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  margin-left: 2%;
+  background-color: #f8fdff;
+  border-radius: 50px ;
+}
+section .content2 .cadre5:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre5:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+section .content2 .cadre6{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content2 .cadre6 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content2 .cadre6 a {
+  width: 100%;
+  height: 100%;
+}
+section .content2 .cadre6  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content2 .cadre6  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content2 .cadre6  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content2 .cadre6  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color: #f8fdff;
+  margin-left: 2%;
+  border-radius: 50px ;
+}
+section .content2 .cadre6:hover  .overlay{
+  opacity: 1;
+}
+
+section .cadre6:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+section .content3{
+  width: 100%;
+  display: flex;
+  background: linear-gradient(#f8fdff,#f8fdff); 
+}
+section .content3:last-child{
+  width: 100%;
+  display: flex;
+  margin-bottom: 5%;
+  background: linear-gradient(#f8fdff,#f8fdff); 
+}
+
+
+section .content3 .cadre7{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content3 .cadre7 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content3 .cadre7 a {
+  width: 100%;
+  height: 100%;
+}
+section .content3 .cadre7  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content3 .cadre7  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content3 .cadre7  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content3 .cadre7  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color: #f8fdff;
+  margin-left: 2%;
+  border-radius: 50px ;
+}
+section .cadre7:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+section .content3 .cadre7:hover  .overlay{
+  opacity: 1;
+}
+
+
+
+section .content3 .cadre8{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content3 .cadre8 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content3 .cadre8 a {
+  width: 100%;
+  height: 100%;
+}
+section .content3 .cadre8  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content3 .cadre8  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content3 .cadre8  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content3 .cadre8  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color: #f8fdff;
+  margin-left: 2%;
+  border-radius: 50px ;
+}
+section .cadre8:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+section .content3 .cadre8:hover  .overlay{
+  opacity: 1;
+}
+
+
+
+section .content3 .cadre9{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .content3 .cadre9 img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .6s;
+}
+section .content3 .cadre9 a {
+  width: 100%;
+  height: 100%;
+}
+section .content3 .cadre9  .overlay{
+  margin-top: 35%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: .8s;
+}
+section .content3 .cadre9  .overlay h3{
+  font-family: 'Oswald', sans-serif;
+  color: #FFF;
+}
+section .content3 .cadre9  .overlay .over{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .content3 .cadre9  .overlay p{
+  color: #FFF;
+  padding: 2% 3%;
+  background-color:#f8fdff;
+  margin-left: 2%;
+  border-radius: 50px ;
+}
+section .cadre9:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+  opacity: 1;
+}
+section .content3 .cadre9:hover  .overlay{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*///////////FIN SECTION///////////*/
